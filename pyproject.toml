@@ -1,0 +1,12 @@
+[project]
+name = "hubmaster"
+description = "Core server to manage devices."
+version = "2024.7.21"
+dependencies = ["firebase", "firebase-admin", "pyyaml", "miraie-ac"]
+
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[project.scripts]
+consumer = "hubmaster:start_consumer()"
